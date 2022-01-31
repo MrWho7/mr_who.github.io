@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/img7.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="img/bg.jpg">
+        </div>
+        <div class="contentBx">
+            <h5 class="logoText">Mr.Who</h5>
+            <div>
+                <h4><span>Hello</span>, I'm</h4>
+                <h2>Mr.Who(not really)</h2>
+                <h4>I love to learn new things and make awesome new friends.</h4>
+                <p>trying hard to make people notice me.</p>
+                <a href="" class="btn">About Me</a>
+            </div>
+            <ul class="sci">
+                <li><a href="https://discordapp.com/users/816342304323141632"><img src="img/discord.png"></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title white">
+            <h2>About Me</h2>
+            <p>There's nothing that much to know bout me.</p>
+        </div>
+        <div class="content">
+            <div class="textBx">
+                <p>I Am Just a 14 years old student who wants to learn many things like Programming, 3d Modelling, Animation, etc.<br><br></p>
+            </div>
+            <div class="imgBx">
+                <img class="center" src="img/me.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="title">
+            <h2>Hobbies</h2>
+            <p>I have plenty Of hobbies too.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img  src="img/coding.png">
+                <h2>Coding</h2>
+                <p>Working with Python, Node.js,html and css</p>
+            </div>
+            <div class="servicesBx">
+                <img  src="img/piano.png">
+                <h2>Piano</h2>
+                <p>I am not talking about the keyboard one, I am Taking about the real Piano.</p>
+            </div>
+            <div class="servicesBx">
+                <img  src="img/book.png">
+                <h2>Reading</h2>
+                <p>I like Reading Books, especially Novels, Biographies, and Books with useful information.</p>
+            </div>
+            <div class="servicesBx">
+                <img  src="img/brush.png">
+                <h2>Drawing</h2>
+                <p>I also like drawing. I mostly use hb pencils and colour pencils for making these.</p>
+            </div>
+            <div class="servicesBx">
+                <img  src="img/people.png">
+                <h2>Making new friends</h2>
+                <p>I wanna Make Many Friends, but still i don't have that much :( .</p>
+            </div>
+            <div class="servicesBx">
+                <img  src="img/icon6.png">
+                <h2>Anime/Movies</h2>
+                <p>I like to watch Anime and movies but i Cannot find good ones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Works</h2>
+            <p>Some of My works I made In few Months including some sketchs and projects.</p>
+        </div>
+        <div class="content">
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/work1.png">
+                </div>
+                <div class="textBx">
+                    <h3>Project 01</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/work2.png">
+                </div>
+                <div class="textBx">
+                    <h3>Project 02</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/work3.png">
+                </div>
+                <div class="textBx">
+                    <h3>Project 03</h3>
+                </div>
+            </div>
+            <div class="workBx">
+                <div class="imgBx">
+                    <img src="img/work4.png">
+                </div>
+                <div class="textBx">
+                    <h3>Project 04</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2>End</h2>
+            <p>That's it, Thanks For watching.</p>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy Mr.Who 2022</p>
+    </div>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Hobbies</a></li>
+            <li><a href="#work" onclick="toggleMenu();">Works</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">End</a></li>
+        </ul>
+    </div>
+
+    
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
